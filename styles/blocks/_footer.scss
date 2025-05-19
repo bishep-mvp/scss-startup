@@ -1,11 +1,4 @@
-.header {
-  padding-top: 30px;
-
-
-  @include mobile {
-    padding-top: 15px;
-  }
-
+.footer {
   &__inner {
     display: flex;
     align-items: center;
