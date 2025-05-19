@@ -1,0 +1,21 @@
+.hero {
+  margin-top: 35px;
+  padding-inline: var(--container-padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  min-height: 100vh;
+  background: url("../../images/hero-bg.webp") center/cover no-repeat;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: var(--border-radius);
+  }
+}

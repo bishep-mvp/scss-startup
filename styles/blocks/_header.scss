@@ -1,0 +1,38 @@
+.header {
+  padding-top: 30px;
+
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+
+      @include mobile {
+        column-gap: 15px;
+      }
+    }
+
+    &-link {
+      &.active {
+        border-bottom: var(--border);
+      }
+
+      &:hover {
+        border-bottom: var(--border);
+        border-color: var(--color-light);
+        transition-duration: var(--transition-duration);
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-gray);
+  }
+
+  &__title {
+    color: var(--color-accent);
+    text-align: center;
+  }
+}
