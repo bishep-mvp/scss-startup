@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/style.css" />
   <title>Starter | О нас</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-inline: var(--container-padding-x);
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,431 +43,43 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a href="/" class="header__menu-link active">Главная</a>
+            <a href="/" class="header__menu-link">Главная</a>
           </li>
           <li class="header__menu-item">
-            <a href="/about" class="header__menu-link">О нас</a>
+            <a href="/about.html" class="header__menu-link active">О нас</a>
           </li>
           <li class="header__menu-item">
-            <a href="/news" class="header__menu-link">Новости</a>
+            <a href="/news.html" class="header__menu-link">Новости</a>
           </li>
           <li class="header__menu-item">
-            <a href="/contacts" class="header__menu-link">Контакты</a>
+            <a href="/contacts.html" class="header__menu-link">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="content">
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          Платформа для начинающих предпринимателей <br />
-          и стартап-проектов.
-        </h1>
-        <div class="hero__description">
-          <p>
-            Здесь вы найдете истории успеха, проверенные бизнес-идеи,
-            инструкции по регистрации, финансовый план, продвижение.
-          </p>
-        </div>
+    <section class="about">
+      <h1 class="about__title section--title">
+        Кратко о нас:
+      </h1>
+      <div class="about__description">
+        <p>Платформа для начинающих предпринимателей и стартап-проектов.</p>
+        <p>
+          На этом сайте собрано в одно целое все, что разбросано по интернету для начала предпринимательской
+          деятельности. И немного историй о успешных проектах.
+        </p>
       </div>
-      <a href="#success" class="hero__button button">Смотреть</a>
-    </section>
-
-    <section class="success" id="success">
-      <div class="success__inner container">
-        <h2 class="success__title section--title">Истории успеха</h2>
-        <ul class="success__list card">
-          <li class="card__item">
-            <h3 class="card__title">KFC</h3>
-            <div class="card__description">
-              <p>
-                Полковнику Сандерсу было 65 лет, он был на мели, у него был
-                только маленький дом и старый автомобиль. Однако он решил, что
-                все должно измениться. Его друзьям очень нравился его рецепт
-                курицы. Это была его уникальная идея, и он решил воплотить ее
-                в жизнь.
-              </p>
-              <p>
-                Он получил 1009 «нет», прежде чем ему пришло первое «да». С
-                этим «да» полковник Хартланд Сандерс изменил мировые традиции
-                в области общепита, открыв ресторан Kentucky Fried Chicken,
-                широко известный как KFC.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Angry Birds</h3>
-            <div class="card__description">
-              <p>
-                Основатели Angry Birds, разработчики мобильных игр из компании
-                Rovio, за шесть лет своего существования создали 51 игру, но
-                компания по-прежнему находилась на грани банкротства.
-              </p>
-              <p>
-                Несмотря на это, основатели Rovio не остановились и попытались
-                в 52-й раз. Они создали игру, в которой можно было стрелять
-                птицами из катапульты, ставшую известной во всем мире как
-                Angry Birds.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Reddit</h3>
-            <div class="card__description">
-              <p>
-                Reddit часто называют «первой страницей Интернета», поскольку
-                на сайте пользователи сами создают контент. Аудитория
-                платформы составляет более 800 миллионов уникальных
-                пользователей.
-              </p>
-              <p>
-                Но в самом начале ее деятельности, в 2005 году, дела шли не
-                так хорошо: пользователей было слишком мало, для того, чтобы
-                сайт мог стать ценным ресурсом в Интернете. Поэтому основатели
-                проекта Стив Хаффман и Алексис Оганян создали множество
-                фейковых аккаунтов и размещали с них ссылки, комментировали
-                собственные посты и изображения, чтобы продемонстрировать
-                активность на портале.
-              </p>
-            </div>
+      <nav class="about__menu">
+        <ul class="about__menu-list">
+          <li class="about__menu-item">
+            <a href="https://github.com/bishep-mvp/scss-startup.git" class="about__menu-link button" target="_blank">
+              GitHub
+            </a>
           </li>
         </ul>
-      </div>
+      </nav>
     </section>
-
-    <section class="business">
-      <div class="business__inner container">
-        <h2 class="business__title section--title">Бизнес идеи</h2>
-        <ul class="business__list card">
-          <li class="card__item">
-            <h3 class="card__title">Интернет-магазин</h3>
-            <div class="card__description">
-              <p>
-                Интерес к интернет-покупкам у потребителей растёт большими
-                темпами, так же как и число продавцов. На рынок сетевой
-                торговли вышли крупные онлайн-агрегаторы — Озон, Вайлдберриз и
-                др. Они намного упростили условия работы начинающим продавцам
-                и повысили конкуренцию. Огромное преимущество
-                интернет-магазина в отсутствии необходимости аренды офисов и
-                складов.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Уличный фаст-фуд</h3>
-            <div class="card__description">
-              <p>
-                Предприниматель может предложить традиционный набор продуктов,
-                либо приготовление эксклюзивных блюд, приготовленных по
-                авторским рецептам. Особенность бизнеса в том, что он остаётся
-                менее уязвимым во время карантинных ограничений, в отличие,
-                например, от кафе и ресторанов. В многолюдных местах точки
-                продаж быстро приготавливаемой еды пользуются стабильным
-                спросом.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Аутсорсинговые услуги</h3>
-            <div class="card__description">
-              <p>
-                Бизнес ориентирован на предоставление услуг, связанных с
-                бухгалтерским, юридическим сопровождением, управлением
-                финансами, выполнением заявок на обработку информации через
-                колл-центры, техническим обслуживанием в сфере IT. Данный вид
-                деятельности появился относительно недавно. В кризисных
-                условиях появляются новые направления деятельности.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="instructions">
-      <div class="instructions__inner container">
-        <h2 class="instructions__title section--title">
-          Инструкции по регистрации
-        </h2>
-        <ol class="instructions__list">
-          <li class="instructions__item">
-            <h3 class="instructions__list-title">
-              Выбор формы собственности:
-            </h3>
-            <ul class="instructions__sublist">
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Индивидуальный предприниматель (ИП)
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Наиболее простой и быстрый способ регистрации, подходит
-                    для небольших проектов и самозанятых.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Общество с ограниченной ответственностью (ООО)
-                </h4>
-                <div class="instructions__dsublist-escription">
-                  <p>
-                    Более сложная форма, требующая больше документов и
-                    процедур, но позволяющая привлекать инвестиции и вести
-                    более крупный бизнес.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Акционерное общество (АО)
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Подходит для крупных проектов с необходимостью привлечения
-                    значительного капитала.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </li>
-
-          <li class="instructions__item">
-            <h3 class="instructions__list-title">
-              Регистрация в налоговой службе (ФНС):
-            </h3>
-            <ul class="instructions__sublist">
-              <li>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Подать заявление о регистрации в ФНС (форма Р16001 для ООО, Р21001 для ИП).
-                  </p>
-                </div>
-              </li>
-              <li>
-
-                <div class="instructions__dsublist-escription">
-                  <p>
-                    Пакет документов зависит от выбранной формы собственности.
-                  </p>
-                </div>
-              </li>
-              <li>
-
-                <div class="instructions__sublist-description">
-                  <p>
-                    Оплатить государственную пошлину.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </li>
-
-          <li class="instructions__item">
-            <h3 class="instructions__list-title">
-              Другие необходимые шаги:
-            </h3>
-            <ul class="instructions__sublist">
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Выбор кодов ОКВЭД
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Определяют сферу деятельности предприятия.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Регистрация в Пенсионном фонде (ПФР)
-                </h4>
-                <div class="instructions__dsublist-escription">
-                  <p>
-                    Необходима для всех работодателей.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Регистрация в Фонде социального страхования (ФСС)
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Необходима для всех работодателей.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </li>
-
-          <li class="instructions__item">
-            <h3 class="instructions__list-title">
-              Дополнительные рекомендации для стартап-проектов:
-            </h3>
-            <ul class="instructions__sublist">
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Составление бизнес-плана
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Поможет привлечь инвестиции и разработать стратегию развития.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Поиск инвесторов и финансирования
-                </h4>
-                <div class="instructions__dsublist-escription">
-                  <p>
-                    Необходимо для стартапа, особенно на начальном этапе.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4 class="instructions__sublist-title">
-                  Создание команды
-                </h4>
-                <div class="instructions__sublist-description">
-                  <p>
-                    Включает в себя поиск квалифицированных специалистов.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="success">
-      <div class="success__inner container">
-        <h2 class="success__title section--title">Финансовый план</h2>
-        <ul class="success__list card">
-          <li class="card__item">
-            <h3 class="card__title">Оценка стартовых затрат:</h3>
-            <div class="card__description">
-              <p>
-                Определите все расходы, связанные с запуском бизнеса, включая регистрацию, аренду помещения, покупку
-                оборудования, рекламу и пр.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Анализ рынка:</h3>
-            <div class="card__description">
-              <p>
-                Изучите рынок, оцените его размер и потенциал. Опишите свою целевую аудиторию, чтобы определить, кому вы
-                будете продавать свои продукты или услуги.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Прогнозирование доходов:</h3>
-            <div class="card__description">
-              <p>
-                Постройте прогноз доходов, основываясь на оценке спроса на ваши продукты или услуги, ценообразовании и
-                объемах продаж. Укажите разные источники дохода, если они есть.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Расчет расходов:</h3>
-            <div class="card__description">
-              <p>
-                Оцените все постоянные и переменные расходы, связанные с деятельностью вашего бизнеса.
-                Включите расходы на сырье, зарплату, аренду, рекламу, маркетинг и другие операционные расходы.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Финансовые показатели:</h3>
-            <div class="card__description">
-              <p>
-                Рассчитайте и укажите основные финансовые показатели, такие как валовая прибыль, чистая прибыль,
-                рентабельность, точка безубыточности.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">План погашения кредитов:</h3>
-            <div class="card__description">
-              <p>
-                Если вы планируете взять кредит, разработайте план его погашения, чтобы убедить кредитора в вашей
-                платежеспособности.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="promotion">
-      <div class="promotion__inner container">
-        <h2 class="promotion__title section--title">Продвижение</h2>
-        <ul class="promotion__list card">
-          <li class="card__item">
-            <h3 class="card__title">Посадочная страница и email-маркетинг:</h3>
-            <div class="card__description">
-              <p>
-                Создание привлекательной посадочной страницы и последующая рассылка по email – эффективный способ
-                привлечения и удержания внимания целевой аудитории.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Активное участие в отраслевых мероприятиях:</h3>
-            <div class="card__description">
-              <p>
-                Посещение конференций, выставок и митапов – это отличный способ узнать о новинках рынка, установить
-                контакты с потенциальными партнерами и инвесторами, а также получить обратную связь от аудитории.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Изучение целевой аудитории:</h3>
-            <div class="card__description">
-              <p>
-                Понимание потребностей и интересов целевой аудитории – это ключевой фактор успешного продвижения
-                стартапа.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Анализ конкурентов:</h3>
-            <div class="card__description">
-              <p>
-                Изучение стратегий и позиционирования конкурентов поможет выявить сильные и слабые стороны их
-                предложений и найти уникальные точки для продвижения своего стартапа.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Продвижение в социальных сетях:</h3>
-            <div class="card__description">
-              <p>
-                Использование социальных сетей – важный инструмент для привлечения внимания к стартапу.
-              </p>
-            </div>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Поисковая оптимизация (SEO):</h3>
-            <div class="card__description">
-              <p>
-                SEO помогает повысить видимость стартапа в поисковых системах, что может привести к увеличению трафика
-                на сайт и повышение узнаваемости бренда
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
   </main>
   <footer class="footer">
     <div class="footer__inner container">
@@ -454,16 +90,16 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
-            <a href="/" class="footer__menu-link active">Главная</a>
+            <a href="/" class="footer__menu-link">Главная</a>
           </li>
           <li class="footer__menu-item">
-            <a href="/about" class="footer__menu-link">О нас</a>
+            <a href="/about.html" class="footer__menu-link active">О нас</a>
           </li>
           <li class="footer__menu-item">
-            <a href="/news" class="footer__menu-link">Новости</a>
+            <a href="/news.html" class="footer__menu-link">Новости</a>
           </li>
           <li class="footer__menu-item">
-            <a href="/contacts" class="footer__menu-link">Контакты</a>
+            <a href="/contacts.html" class="footer__menu-link">Контакты</a>
           </li>
         </ul>
       </nav>

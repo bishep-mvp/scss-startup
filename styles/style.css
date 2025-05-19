@@ -151,6 +151,7 @@ h2,
 h3,
 h4 {
   font-weight: 700;
+  line-height: 1.1;
 }
 
 h1,
@@ -353,6 +354,9 @@ section {
   row-gap: 30px;
 }
 
+.footer {
+  padding-bottom: 30px;
+}
 .footer__inner {
   display: flex;
   align-items: center;
